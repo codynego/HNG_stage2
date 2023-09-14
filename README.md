@@ -11,16 +11,6 @@ This project is a simple Django REST API that allows you to perform CRUD (Create
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
-  - [API Endpoints](#api-endpoints)
-    - [Create a Person](#create-a-person)
-    - [Retrieve a Person](#retrieve-a-person)
-    - [Update a Person](#update-a-person)
-    - [Delete a Person](#delete-a-person)
-  - [Sample Usage](#sample-usage)
-  - [Known Limitations and Assumptions](#known-limitations-and-assumptions)
-  - [Setting Up and Deploying the API](#setting-up-and-deploying-the-api)
-  - [Contributing](#contributing)
-  - [License](#license)
 
 ## Getting Started
 
@@ -34,9 +24,23 @@ Before setting up and running the API, ensure you have the following prerequisit
 
 ## Installation
 
-To use this Django REST API, follow these instructions:                                                                         1. **Installation:**
+To use this Django REST API, follow these instructions:
+1. **Installation:**
    - Clone the repository to your local machine:
-                                                                     ```bash
-     git clone https://github.com/yourusername/your-repo.git         cd your-repo
-     ```                                                                                                                           - Install project dependencies using pip:                                                                                         ```bash                                                         pip install -r requirements.txt                                 ```                                                                                                                           - Apply database migrations:                                 
-     ```bash                                                         python manage.py makemigrations                                 python manage.py migrate                                        ```                                                                                                                           - Start the development server:                                                                                                   ```bash                                                         python manage.py runserver                                      ``` 
+```bash
+     git clone https://github.com/yourusername/your-repo.git
+cd your-repo
+     ```
+- Install project dependencies using pip:
+```bash pip install -r requirements.txt
+                            ```
+ - Apply database migrations:                                 
+     ```bash
+ python manage.py makemigrations
+ python manage.py migrate
+    ```
+    - Start the development server:                                                                                                   
+    
+    ```bash                                                        
+    python manage.py runserver                                     
+    ``` 
