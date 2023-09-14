@@ -29,7 +29,7 @@ To use this Django REST API, follow these instructions:
 1. **Installation:**
    - Clone the repository to your local machine:
      ```bash
-     git clone https://github.com/yourusername/your-repo.git
+     git clone https://github.com/codynego/HNG_stage2.git
      cd your-repo
      ```
 
