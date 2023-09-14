@@ -69,7 +69,7 @@ To use this Django REST API, follow these instructions:
 
    - **Creating a Person:**
      ```shell
-     curl -X POST -H "Content-Type: application/json" -d '{"name": "John Doe", "age": 30}' http://localhost:8000/api/persons/
+     curl -X POST -H "Content-Type: application/json" -d '{"name": "John Doe", "age": 30}' http://localhost:8000/api/
      ```
 
    - **Retrieving a Person:**
@@ -79,7 +79,7 @@ To use this Django REST API, follow these instructions:
 
    - **Updating a Person:**
      ```shell
-     curl -X PUT -H "Content-Type: application/json" -d '{"name": "Updated Name", "age": 35}' http://localhost:8000/api/persons/1/
+     curl -X PUT -H "Content-Type: application/json" -d '{"name": "Updated Name", "age": 35}' http://localhost:8000/api/1/
      ```
 
    - **Deleting a Person:**
