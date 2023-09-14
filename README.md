@@ -25,22 +25,27 @@ Before setting up and running the API, ensure you have the following prerequisit
 ## Installation
 
 To use this Django REST API, follow these instructions:
+
 1. **Installation:**
    - Clone the repository to your local machine:
-```bash
-     git clone https://github.com/yourusername/your-repo.git
-cd your-repo
-     ```
-- Install project dependencies using pip:
-```bash pip install -r requirements.txt
-                            ```
- - Apply database migrations:                                 
      ```bash
- python manage.py makemigrations
- python manage.py migrate
-    ```
-    - Start the development server:                                                                                                   
-    
-    ```bash                                                        
-    python manage.py runserver                                     
-    ``` 
+     git clone https://github.com/yourusername/your-repo.git
+     cd your-repo
+     ```
+
+   - Install project dependencies using pip:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+   - Apply database migrations:
+     ```bash
+     python manage.py makemigrations
+     python manage.py migrate
+     ```
+
+   - Start the development server:
+     ```bash
+     python manage.py runserver
+     ```
+
