@@ -14,13 +14,12 @@ To use this Django REST API, follow these instructions:
 2. **API Endpoints:**
 
    - **Create a Person:**
-     - **Endpoint:** `/api/persons/`
+     - **Endpoint:** `/api/`
      - **Method:** POST
      - **Request Format:**
        ```json
        {
          "name": "John Doe",
-         "age": 30
        }
        ```
      - **Response Format (Success - 201 Created):**
@@ -28,30 +27,27 @@ To use this Django REST API, follow these instructions:
        {
          "id": 1,
          "name": "John Doe",
-         "age": 30
        }
        ```
 
    - **Retrieve a Person:**
-     - **Endpoint:** `/api/persons/{id}/`
+     - **Endpoint:** `/api/{id}/`
      - **Method:** GET
      - **Response Format (Success - 200 OK):**
        ```json
        {
          "id": 1,
          "name": "John Doe",
-         "age": 30
        }
        ```
 
    - **Update a Person:**
-     - **Endpoint:** `/api/persons/{id}/`
+     - **Endpoint:** `/api/{id}/`
      - **Method:** PUT
      - **Request Format:**
        ```json
        {
          "name": "Updated Name",
-         "age": 35
        }
        ```
      - **Response Format (Success - 200 OK):**
@@ -59,12 +55,11 @@ To use this Django REST API, follow these instructions:
        {
          "id": 1,
          "name": "Updated Name",
-         "age": 35
        }
        ```
 
    - **Delete a Person:**
-     - **Endpoint:** `/api/persons/{id}/`
+     - **Endpoint:** `/api/{id}/`
      - **Method:** DELETE
      - **Response (Success - 204 No Content)**
 
@@ -74,22 +69,22 @@ To use this Django REST API, follow these instructions:
 
    - **Creating a Person:**
      ```shell
-     curl -X POST -H "Content-Type: application/json" -d '{"name": "John Doe", "age": 30}' http://localhost:8000/api/persons/
+     curl -X POST -H "Content-Type: application/json" -d '{"name": "John Doe", "age": 30}' http://localhost:8000/api/
      ```
 
    - **Retrieving a Person:**
      ```shell
-     curl http://localhost:8000/api/persons/1/
+     curl http://localhost:8000/api/1/
      ```
 
    - **Updating a Person:**
      ```shell
-     curl -X PUT -H "Content-Type: application/json" -d '{"name": "Updated Name", "age": 35}' http://localhost:8000/api/persons/1/
+     curl -X PUT -H "Content-Type: application/json" -d '{"name": "Updated Name", "age": 35}' http://localhost:8000/api/1/
      ```
 
    - **Deleting a Person:**
      ```shell
-     curl -X DELETE http://localhost:8000/api/persons/1/
+     curl -X DELETE http://localhost:8000/api/1/
      ```
 
 4. **Known Limitations and Assumptions:**
